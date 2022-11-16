@@ -55,8 +55,6 @@ void MainWindow::digits_numbers(){
         labelNumber = (ui->label->text() + button->text()).toDouble();
     }
 
-
-
     newLabel = QString::number(labelNumber, 'g', 15);
 
     ui->label->setText(newLabel);
@@ -88,7 +86,6 @@ void MainWindow::unary_operation_pressed(){
         ui->label->setText(newLabel); //Задаем текст
     }
 }
-
 
 void MainWindow::on_pushButton_clear_released(){
     ui->pushButton_plus->setChecked(false);
